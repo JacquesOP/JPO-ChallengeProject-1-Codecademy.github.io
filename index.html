@@ -1,9 +1,116 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML &lt;form&gt; tags</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
 <body>
-    <h1>Hello, my name is Jacques Prince OKOKO</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <header class="header">
+            <h1 class="logo">
+                HTML &lt;form&gt; Element
+            </h1>
+    </header>
 
+    <main class="main">
+
+        <section class="table__element">
+            <h2 class="title">
+                Form Tags
+            </h2>
+
+            <table>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr>
+                        <td class="tag__name">&lt;form&gt;</td>
+                        <td class="tag__name">Form</td>
+                        <td>It is an element that represents a document section containing interactive controls for submitting information.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag__name">&lt;label&gt;</td>
+                        <td class="tag__name">Label</td>
+                        <td>&lt;label&gt; represents a caption for an item in a user interface.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag__name">&lt;input&gt;</td>
+                        <td class="tag__name">Input</td>
+                        <td>The &lt;input&gt; is used to create interactive controls for web-based forms in order to accept data from the user</td>
+                    </tr>
+                    <tr>
+                        <td class="tag__name">&lt;fieldset&gt;</td>
+                        <td class="tag__name">Fieldset</td>
+                        <td>It is used to group several controls as well as labels within a web form.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag__name">&lt;legend&gt;</td>
+                        <td class="tag__name">Legend</td>
+                        <td>&lt;legend&gt; represents a caption for the content of its parent &lt;fieldset&gt;.</td>
+                    </tr>
+            </table>
+        </section>
+
+        <section class="table__attributes">
+            <h2 class="title">
+                Form Attributes
+            </h2>
+            <table>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr>
+                        <td class="tag__name">action</td>
+                        <td class="tag__name">Action</td>
+                        <td>The URL that processes the form submission.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag__name">method</td>
+                        <td class="tag__name">Method</td>
+                        <td>The HTTP method to submit the form with. The only allowed methods/values are "post" and "get". <br>The POST method; form data sent as the request body. The GET; form data appended to the action URL with a ? separator. Use this method when the form has no side effects.</td>
+                    </tr>
+            </table>
+        </section>
+
+        <section class="form">
+            <form action="#">
+
+                <div class="form__logo">
+                    <img src="./img/colored-circle.png" alt="form logo">
+                </div>
+
+                <legend>Connect with your Vizion ID</legend>
+
+                <div class="form__container">
+                    <div class="form__name">
+                        <input type="text" name="name" id="nameinput" placeholder="E-mail or Phone Number" class="connection">
+                    </div>
+
+                    <div class="form__password">
+                        <input type="password" name="password" id="passwordinput" placeholder="Password">
+                    </div>
+
+                    <div class="form__validation">
+                        <input type="submit" value="Log In" class="validation">
+                    </div>
+                </div>
+
+                <a href="#" class="forgot__pass">Forgot password?</a>
+
+                <div class="new__account">
+                    <a href="#" class="create__account">Create New Account</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+</body>
 </html>
