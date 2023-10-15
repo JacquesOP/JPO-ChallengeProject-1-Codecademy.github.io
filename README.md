@@ -1,4 +1,4 @@
-# JPO-Codecademy.github.io
+# JPO-ChallengeProject-1-Codecademy.github.io
 This repository is for projects done on Codecademy<br>
 
 Here is my Cheatsheet challenge project with HTML and CSS only.<br>
